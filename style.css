@@ -16,11 +16,17 @@ body {
   font-family: var(--font);
 }
 body {
-  display: grid;
   margin: auto;
   min-height: 100vh;
+}
+main {
+  display: grid;
+  grid-template-columns: auto auto;
   gap: var(--gap);
+}
+article {
   max-width: var(--container);
+  padding: 50px 100px;
 }
 a,
 a:any-link {
@@ -44,6 +50,9 @@ body > header {
   top: 0;
   z-index: 1;
 }
+body > header {
+  padding: 0px 100px;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -60,4 +69,12 @@ section p {
   flex-direction: column;
   justify-content: center;
   width: fit-content;
+}
+
+figure img {
+  width: 500px;
+  height: 700px;
+}
+footer {
+  text-align: center;
 }
